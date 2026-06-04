@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: orange;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #121212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 24px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 40px;
+  width: 100%;
+  max-width: 370px;
+  padding: 32px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Top section: Logo and Save button */
+.card .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.logo-container {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #efefef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.logo-container img {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.save {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid #e2e8f0;
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #718096;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.save:hover {
+  background-color: #f7fafc;
+  border-color: #cbd5e0;
+}
+
+.save svg {
+  color: #718096;
+}
+
+/* Center section: Company, Title and Tags */
+.center {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 48px; /* generous space before divider */
+}
+
+.brand-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.brand-meta .company {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a202c;
+}
+
+.brand-meta .time {
+  font-size: 13px;
+  color: #a0aec0;
+  font-weight: 400;
+}
+
+.center h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000000;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+.center .tag {
+  display: flex;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.center .tag h4 {
+  font-size: 12px;
+  font-weight: 600;
+  background-color: #e2e8f0;
+  color: #4a5568;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+/* Divider */
+.divider {
+  height: 1px;
+  background-color: #edf2f7;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Bottom section: Rate, Location, and Apply Button */
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bottom .left {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.bottom .left h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.bottom .left p {
+  font-size: 12px;
+  color: #a0aec0;
+  font-weight: 500;
+}
+
+.apply-btn {
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.apply-btn:hover {
+  opacity: 0.9;
+}
